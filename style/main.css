@@ -26,13 +26,19 @@ header .container{
 
 header .netflix-logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    /* color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 40px; */
+    width: 10%;
+}
+
+header nav{
+    margin-left: -55%;
 }
 
 header nav a{
     text-decoration: none;
+    font-weight: bold;
     color: #AAA;
     margin-right: 10px;
 }
@@ -41,13 +47,20 @@ header nav a:hover{
     color: #FFF;
 }
 
+.profile-image{
+    width: 4%;
+    margin-right: 5%;
+    border: solid var(--preto);
+    border-radius: 20%;
+}
+
 /*filme principal*/
 
 .filme-principal{
     font-size: 16px;
-    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/imgs/os-simpsons.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('./imgs/os-simpsons.jpg');
 
-    height: 500px;
+    height: 700px;
     background-size: cover;
 
     display: flex;
@@ -89,6 +102,16 @@ header nav a:hover{
     margin-right: 8px;
 }
 
+.botao .button-link{
+    text-decoration: none;
+    color: white;
+    transition: .3s ease all;
+}
+
+.botao:hover .button-link{
+    color: black;
+}
+
 .container{
     margin-left: 20px;
 }
@@ -104,5 +127,11 @@ header nav a:hover{
 }
 
 .carousel-filmes{
-    margin-top: 5px;
+    margin-top: -5%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+.carousel-filmes .titulo{
+    margin-bottom: 1%;
 }
